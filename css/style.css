@@ -1,0 +1,444 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+button, select, button a {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+
+h2 {
+  font-size: 60px;
+  font-family:"Rubik";
+  line-height: 80px;
+}
+
+h3 {
+  color: orange;
+  font-size: 30px;
+}
+
+p,a, span{
+  font-size: 20px;
+  font-family:"Karla";
+  line-height: 40px;
+  text-decoration: none;
+}
+.fourth, .fifth {
+  text-align: center;
+}
+
+.fourth li{
+  list-style: none;
+  font-family:"Karla";
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+*{
+ margin: 0;
+ padding: 0; 
+}
+
+/* @media all and (max-width:390px){
+  
+} */
+
+
+.first {
+  display: flex;
+  flex-flow: row wrap;
+  background-image: url('../img/fruits-section-one.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  align-content: flex-start;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+nav li, nav li form{
+  display: inline;
+}
+
+nav a,nav img{
+  padding: 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+h1, .first div {
+  width: 50%;
+  margin-left: 10%;
+  padding-top: 30px;
+}
+
+.first h1{
+  font-size: 80px;
+}
+
+.dropdown{
+  display: inline;
+  padding-bottom: 30px;
+}
+
+.dropdown input{
+  padding: 5px;
+  margin-right:0;
+  width:60%;
+}
+
+select{
+  font-size: 18px;
+  padding: 5px;
+  margin-left:0;
+}
+
+.SocialMedia{
+  width: 40%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-self: start;
+}
+
+.SocialMedia>span+span,.SocialMedia>span+span+span{
+  padding-left: 50px;
+}
+.SocialMedia img{
+  height: 20px;
+}
+
+
+/* About Us Section */
+.second{
+  height: 900px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+/* background */
+.right-part{
+  position: absolute;
+  height: 900px;
+  width: 40%;
+  right: 0px;
+  background-image:linear-gradient(to left, transparent, rgba(237,237,237,255) ), url('../img/macaroons-section-two.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: -1;
+}
+/* background */
+.middle-part{
+  position: absolute;
+  height: 900px;
+  width:30%;
+  right: 40%;
+  background-color:rgba(237,237,237,255) ;
+  z-index: -1;
+}
+/* background */
+.left-part{
+  position: absolute;
+  height: 900px;
+  width: 30%;
+  left: 0px;
+  background-image: linear-gradient(to right, transparent, rgba(237,237,237,255)),url('../img/pie-section-two.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: -1;
+}
+
+.second h3, .second h2, .second p{
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+.second h3{
+  padding-top:50px;
+}
+
+.second button{
+  margin-left: 25%;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.second button a{
+  line-height: 25px;
+}
+
+.second button a{
+  font-size:25px;
+}
+
+/* SECTION THREE */
+/* Menu Section color*/
+.third{
+  background-color: rgba(242,246,247,255);
+  height: 900px;
+}
+
+/* text layout to be center*/
+.third h2, .third h3{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height:50px;
+  display: inline-block;
+  padding: 30px;
+}
+
+/* create space between top of third section and text of h3 */
+.third h3{
+  padding-top: 50px;
+}
+
+/* how the menu tabs are displayed */
+.menuTab{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* layout tabs for different menu before selection */
+.menuTab button{
+  background-color:rgba(242,246,247,255);
+  color: grey;
+  border: none;
+  border-bottom: 1px solid grey;
+  width: auto; 
+  height: 60px;
+  font-size: 30px;
+  display: inline-block;
+  padding: 20px 20px;
+  text-align: center;
+  margin-top: 40px;
+  cursor:pointer;
+  transition: 0.3s;
+}
+
+/* while the tab is active */
+.menuTab button.active{
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+/* animation of changing menu */
+.menu{
+  animation: fadeEffect 1s;
+}
+@keyframes fadeEffect{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* container of menu photos */
+.menuArea{
+  height: 600px;
+  width: 100%;
+}
+
+/* menu photos to be displayed in a row */
+.menu{
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  width: 100%; 
+}
+
+/* this div was created so that the photos fill the div without stretching the photos */
+#foodPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  height: 500px;
+  width: 20%;
+  margin: 10px 20px;
+}
+
+/* photo to fill up div */
+#foodPhoto img{
+  width: 100%;
+  height: 100%;
+  /* this will prevent the object from distorting */
+  object-fit: cover;
+}
+
+#foodPhoto .text{
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  font: "Karla";
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  filter: opacity(100%);
+}
+
+#foodPhoto:hover {
+  background-color: darkgrey;
+  filter: opacity(50%);
+}
+
+/* SECTION FOUR */
+/* Restaurant Info Section */
+.fourth {
+  height: 1300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.fourth h2, .fourth h3{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.fourth h3{
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* phone logo */
+.fourth img{
+  width: 7em;
+  display: inline;
+  padding: 20px;
+  position: relative;
+}
+
+.fourth span{
+  font-size: 30px;
+}
+
+.fourth div{
+  display: flex;
+  flex-flow: row wrap;
+  width: 70%;
+}
+
+/* hours of operation */
+.fourth ul{
+  margin-top: 20px;
+  width: 50%;
+  font-size: 30px;
+}
+
+.fourth li{
+  font-size: 25px;
+}
+
+/* slideshow container */
+.restaurantContainer{
+  height: 800px;
+  width: 50%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* top image container */
+.restaurantContainer .s4-row-top{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 80%;
+}
+
+/* top image */
+.restaurantContainer .s4-row-top img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* image scroll container */
+.restaurantContainer .s4-row-scroll{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 85%;
+}
+
+/* individual image container in the scroll */
+.restaurantContainer .s4-col{
+  display: flex;
+  height: 100%;
+  width: 32%;
+}
+
+/* individual image in the scroll */
+.s4-col img{
+  width: 100%;
+  height: 100%;
+  /* this will prevent the object from distorting */
+  object-fit: cover;
+}
+
+.s4-col .s4-opacity{
+  filter: opacity(50%);
+}
+
+.s4-col .s4-hover-opacity-off{
+  filter: opacity(100%);
+}
+
+
+/*  */
+/* Fifth Section Layout */
+.fifth img{
+  width: 7em;
+}
+
+
+/* @media all and (min-width:390px){
+  
+} */
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+

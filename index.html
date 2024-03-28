@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Cuisine Restaurant</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Rubik:wght@600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<section class="first clearfix">
+			<header>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">Menu</a>
+						</li>
+						<li>
+							<a href="#">Order Now</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Location</a>
+						</li>
+						<li>
+							<img src="#" alt="cart">
+						</li>
+						<li>
+							<form>
+								<input type="text">
+							</form>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<h1>Welcome To Our Cuisine Restaurant</h1>
+			<div class="dropdown">
+				<input type="search" placeholder="Search here">
+				<select name="navigate">
+					<option value="Location" selected>Location</option>
+					<option value="option2">option2</option>
+					<option value="option3">option3</option>
+				</select>
+			</div>
+			<div class="SocialMedia">
+				<span>
+					<img src="https://pics.freeicons.io/uploads/icons/png/12342372401566470602-512.png" alt="facebook logo">252K
+				</span>
+				<span>
+					<img src="https://pics.freeicons.io/uploads/icons/png/17877387901543238938-64.png" alt="Twitter logo">62K
+				</span>
+				<span>
+					<img src="https://pics.freeicons.io/uploads/icons/png/5639255371566470606-64.png" alt="Instragram logo">55K
+				</span>
+			</div>
+		</section>
+		<section class="second clearfix">
+			<div class="right-part"></div>
+			<div class="middle-part"></div>
+			<div class="left-part"></div>
+			<h3>About Us</h3>
+			<h2>Discover Our Restuarant Story</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ullam ut ad debitis obcaecati nihil ab tempora eius voluptates at placeat totam, quo, distinctio fugit numquam animi iure omnis similique itaque tenetur iste reiciendis repudiandae quis voluptas! Quis doloremque impedit, adipisci quam at cupiditate odit molestiae deserunt sit sequi sunt perspiciatis voluptatem qui officiis accusantium debitis amet unde, atque cumque illo, nobis quia ex eius facilis! Sunt corporis accusamus, odio sed incidunt assumenda ratione nostrum aliquid officiis animi quam nisi quia consequuntur error, debitis eaque molestias id iure?  </p>
+			<button>
+				<a href=#>Discover Menu</a>
+			</button>
+		</section>
+		<section class="third clearfix">
+			<h3>Order Online Now</h3>
+			<h2>Our Specialty Cuisine</h2>
+			<div class="menuTab clearfix">
+				<button onclick="showMenu(event,'breakfast')" class="tabLinks" id="defaultOpen">Breakfast</button>
+				<button onclick="showMenu(event,'lunch')" class="tabLinks">Lunch</button>
+				<button onclick="showMenu(event,'dinner')" class="tabLinks">Dinner</button>
+				<button onclick="showMenu(event,'dessert')" class="tabLinks"> Dessert</button>
+				<button onclick="showMenu(event,'shake')" class="tabLinks"> Shake</button>
+			</div>
+			<div class="menuArea clearfix">
+				<div id="breakfast" class="menu">
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80">
+						<div class="text">Pancake</div>
+						
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnJlYWtmYXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Avocado Toast</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnJlYWtmYXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">French Toast</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1581559178851-b99664da71ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80">
+						<div class="text">Oatmeal</div>
+					</div>
+				</div>
+				<div id="lunch" class="menu">
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bHVuY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Cesar Salad</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1629358101753-531fa5a2f661?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGx1bmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Tomato Salad</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGx1bmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Tofu Bowl</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fGx1bmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Salmon Bowl</div>
+					</div>
+				</div>
+				<div id="dinner" class="menu">
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRpbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Fried Rice</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGRpbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Pasta</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGRpbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Baked Salmon</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1583953623787-ada99d338235?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGRpbm5lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Steak</div>
+					</div>
+				</div>
+				<div id="dessert" class="menu">
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Crepe</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Panna Cotta</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Brownie</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Cupcake</div>
+					</div>
+				</div>
+				<div id="shake" class="menu">
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1629993470807-33bfa488153b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHNoYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Strawberry</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1525385133512-2f3bdd039054?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHNoYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Orange</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1472555794301-77353b152fb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHNoYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Vanilla Berry</div>
+					</div>
+					<div id="foodPhoto">
+						<img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+						<div class="text">Chocolate</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="fourth clearfix">
+			<h3>Book Table</h3>
+			<h2>Opening Hours</h2>
+			<img src="https://pics.freeicons.io/uploads/icons/png/14231000421530272912-512.png" alt="phone icon">
+			<span> Call now</span>
+			<span> 123 456 7890 </span>
+			<div>
+				<ul class="MontoTues">
+					Monday to Tuesday
+					<li>
+						09:00 am-22:00 pm
+					</li>
+				</ul>
+				<ul class="FritoSun">
+					Friday to Sunday
+					<li>
+						11:00 am-20:00 pm
+					</li>
+				</ul>
+			</div>
+			<div class="restaurantContainer">
+				<div class="s4-row-top">
+					<img class="mySlides" src="https://images.unsplash.com/photo-1565650834520-0b48a5c83f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1111&q=80" style="width:100%;display:none">
+					<img class="mySlides" src="https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" style="width:100%">
+					<img class="mySlides" src="https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" style="width:100%;display:none">
+				</div>
+				<div class="s4-row-scroll">
+					<div class="s4-col">
+						<img class="demo s4-opacity s4-hover-opacity-off" src="https://images.unsplash.com/photo-1565650834520-0b48a5c83f43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1111&q=80" style="cursor:pointer" onclick="currentDiv(1)">
+					</div>
+					<div class="s4-col">
+						<img class="demo s4-opacity s4-hover-opacity-off" src="https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" style="cursor:pointer" onclick="currentDiv(2)">
+					</div>
+					<div class="s4-col">
+						<img class="demo s4-opacity s4-hover-opacity-off" src="https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" style="cursor:pointer" onclick="currentDiv(3)">
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		<section class="fifth clearfix">
+			<h3>Testimonials</h3>
+			<h2>Customer Say</h2>
+			<img src="https://cdn-icons-png.flaticon.com/512/2319/2319330.png" alt="Mr. John Smith">
+			<h4> Mr John Smith</h4>
+			<h6> Art Director</h6>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis eaque expedita sapiente alias ratione quo voluptatibus corporis adipisci id atque.</p>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
